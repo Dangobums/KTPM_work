@@ -1,4 +1,4 @@
-public class Main {
+public class Triangle {
 
     static double[] borderTestCase_Avalue = {5.0, 5.0, 5.0, 5.0, 5.0, 0, 10.0, 0.0, 10.0, -0.1, 5.0};
     static double[] borderTestCase_Bvalue = {5.0, 5.0, 5.0, 0.0, 10.0, 5, 5.0, 0.0, 10.0, 5.0, 0.0,};
@@ -27,7 +27,7 @@ public class Main {
             {7.0, 8.3, 7.2, 7.0, 8.3, 7.2, 7.0, 8.3, 7.2, 7.0, 8.3, 7.2, 7.0, 8.3, 7.2, 7.0, 8.3, 7.2},
             {8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8,}
     };
-    static String calculatePoint(double a, double b, double c) {
+    public static String calculatePoint(double a, double b, double c) {
         try {
             if (a < 0.0 || a > 10.0 || b < 0.0 || b > 10.0 || c < 0.0 || c > 10.0) {
                 return "Không hợp lệ";
