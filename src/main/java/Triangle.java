@@ -28,37 +28,37 @@ public class Triangle {
             {8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8, 8.5, 9.9, 8.8,}
     };
     public static String calculatePoint(double a, double b, double c) {
+        String result = "";
         try {
             if (a < 0.0 || a > 10.0 || b < 0.0 || b > 10.0 || c < 0.0 || c > 10.0) {
-                return "Không hợp lệ";
+                result = "Không hợp lệ";
             }
 
             double T = a * 0.1 + b * 0.3 + c * 0.6;
-//            System.out.println("a:" + a + ", b:" + b + ", c:" + c);
-//            System.out.println("Tong "+ T);
+
             if (0.0 <= T && T < 4.0) {
-                return "F";
+                result = "F";
             }
 
             if (4.0 <= T && T <= 5.4) {
-                return "D";
+                result = "D";
             }
 
             if (5.5 <= T && T <= 6.9) {
-                return "C";
+                result = "C";
             }
 
             if (7.0 <= T && T <= 8.4) {
-                return "B";
+                result = "B";
             }
 
             if (8.5 <= T && T <= 10.0) {
-                return "A";
+                result = "A";
             }
         } catch (Exception e) {
             return "Không hợp lệ";
         }
-        return "Không hợp lệ";
+        return result;
     }
 
     public static void main(String[] args) {
